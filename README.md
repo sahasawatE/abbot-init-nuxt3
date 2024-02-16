@@ -1,23 +1,23 @@
-# Nuxt 3 Minimal Starter
+# Abbot Nuxt 3 Starter with Vuetify3
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
-Make sure to install the dependencies:
-
+Initialize project:
 ```bash
-# npm
-npm install
+npx abbot-nuxt3@latest <project-name>
+```
 
-# pnpm
-pnpm install
+Run development:
+```bash
+cd <project-name>
 
-# yarn
-yarn install
+#yarn
+yarn dev
 
-# bun
-bun install
+#npm
+npm run dev
 ```
 
 ## Development Server
@@ -38,38 +38,18 @@ yarn dev
 bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Tech Stack
+
+**Framework:** Nuxt 3
+
+**UI Components:** Vuetify 3
+
+**Styling and Utility classes:** TailwindCSS
+
+
+## Support
+
+For support, email hoklok3@gmail.com .
+
