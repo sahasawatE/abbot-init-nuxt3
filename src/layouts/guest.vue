@@ -1,31 +1,38 @@
 <template>
   <v-app>
-    <v-app-bar>
-      <template #prepend>
-        <div class="t-cursor-pointer" @click="handleClickLogo">
-          <v-img
-            src="/images/logo.png"
-            width="80"
-            class="t-pointer-events-none"
-          ></v-img>
-        </div>
-      </template>
+    <v-app-bar title="Application name" color="primary">
       <template #append>
-        <div class="d-flex flex-row t-gap-2">
-          <v-btn text="สมัครสมาชิก"></v-btn>
-          <v-btn color="secondary" text="เข้าสู่ระบบ" variant="flat"></v-btn>
+        <div class="d-flex flex-row align-center t-gap-4">
+          <v-btn text="TH" variant="tonal" rounded size="small">
+            <template #prepend>
+              <v-icon>
+                <i class="ph ph-translate"></i>
+              </v-icon>
+            </template>
+          </v-btn>
+          <div class="d-flex flex-row t-gap-2">
+            <v-btn text="สมัครสมาชิก" variant="tonal"></v-btn>
+            <v-btn
+              text="เข้าสู่ระบบ"
+              color="secondary"
+              variant="flat"
+              to="/login"
+            ></v-btn>
+          </div>
         </div>
       </template>
     </v-app-bar>
     <v-main>
-      <v-container class="t-h-full">
+      <v-container class="t-min-h-[80vh]">
         <slot />
       </v-container>
     </v-main>
+    <v-footer color="background">Copyright © {{ footerYear }}</v-footer>
   </v-app>
 </template>
 
 <script lang="ts">
+import moment from "moment";
 import { useTheme } from "vuetify";
 
 export default {
@@ -35,9 +42,9 @@ export default {
 
     theme.global.name.value = "guest";
   },
-  methods: {
-    handleClickLogo() {
-      console.log("logo");
+  computed: {
+    footerYear() {
+      return moment().get("year");
     },
   },
 };

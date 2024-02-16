@@ -7,12 +7,12 @@ import { md3 } from "vuetify/blueprints";
 const guest = {
   dark: false,
   colors: {
-    surface: "#123661",
-    background: "#164176",
-    "surface-bright": "#123661",
-    "surface-light": "#123661",
-    "surface-variant": "#123661",
-    "on-surface-variant": "#123661",
+    surface: "#046B5C",
+    background: "#045E4D",
+    "surface-bright": "#FFFFFF",
+    "surface-light": "#FFFFFF",
+    "surface-variant": "#FFFFFF",
+    "on-surface-variant": "#FFFFFF",
     primary: "#046B5C",
     "primary-darken-1": "#046B5C",
     secondary: "#C49A6C",
@@ -63,12 +63,13 @@ export default defineNuxtPlugin((app) => {
       },
       VBtn: {
         variant: "flat",
-        rounded: true,
-        // rounded: "lg",
+        rounded: "lg",
       },
       VTextField: {
         variant: "underlined",
         color: "primary",
+        hideDetails: true,
+        hideSpinButtons: true,
       },
       VDivider: {
         thickness: "1",
