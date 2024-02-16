@@ -1,7 +1,6 @@
 {
-  "name": "abbot-innit-nuxt3",
-  "version": "1.0.1",
-  "bin": "./bin/cli.js",
+  "name": "nuxt-app",
+  "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
