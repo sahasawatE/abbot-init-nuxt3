@@ -1,5 +1,5 @@
 {
-  "name": "@init/abbot-innit-nuxt3",
+  "name": "abbot-innit-nuxt3",
   "version": "1.0.0",
   "bin": "./bin/cli.js",
   "type": "module",
